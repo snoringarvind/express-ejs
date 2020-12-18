@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="index">
+      <h1><%= title %></h1>
+      <div class="new-message">
+        <a href="/new"><button>New Message</button></a>
+      </div>
+      <div class="display-messages">
+        <% messages.forEach((value,index)=>{ %>
+        <ul>
+          <li>Name: <%=value.user %></li>
+          <li>Text: <%= value.text %></li>
+          <li>Added: <%= value.date%></li>
+        </ul>
+        <%})%>
+      </div>
+    </div>
+  </body>
+</html>

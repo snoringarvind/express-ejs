@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+.display-messages ul {
+  border: 1px solid;
+  width: fit-content;
+  margin: 1rem 0;
+  list-style: none;
+  padding: 1rem;
+  background-color: rgb(212, 239, 248);
+  border: 1px solid rgb(14, 14, 216);
+  border-radius: 5px;
+}
+
+.new-message button {
+  padding: 1rem;
+}
+
+.form * {
+  display: block;
+  margin: 0.4rem 0;
+}
+
+.form {
+  border: 1px solid;
+  width: fit-content;
+  padding: 1rem;
+  background-color: rgb(215, 244, 253);
+  border-radius: 5px;
+}
